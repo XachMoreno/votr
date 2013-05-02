@@ -7,6 +7,18 @@ var votrApp = angular.module('votrApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl'
+      })
+      .when('/vote', {
+        templateUrl: 'views/vote.html',
+        controller: 'VoteCtrl'
+      })
+      .when('/results', {
+        templateUrl: 'views/results.html',
+        controller: 'ResultsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
