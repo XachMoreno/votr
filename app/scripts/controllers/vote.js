@@ -70,6 +70,68 @@ votrApp.controller('VoteCtrl', function($scope) {
 		];
 	];
 
+
+	$scope.vicePresidentialCandidates = [
+		'candidate': [
+			{
+				'Full Name': 'Joe Biden',
+				'Party': 'Democrat',
+				'Alma Mater': [
+					{
+						'school': 'University of Delaware (B.A.)',
+						'school': 'Syracuse University (J.D.)'
+					}
+				],
+				'Career': [
+					{
+						'job': 'Lawyer',
+						'job': 'United States Senator from Delaware',
+						'job': 'Chairman of the Senate Committee on Foreign Relations',
+						'job': 'Chairman of the International Narcotics Control Caucus',
+						'job': 'Chairman of the Senate Committee on the Judiciary',
+						'job': '47th Vice President of the United States'
+					}
+				],
+				'Home State': 'Delaware',
+				'Born': [
+					{
+						'Date': 'November 20, 1942 (age 70)',
+						'Location': 'Scranton, Pennsylvania'
+					}
+				],
+				'Religion': 'Roman Catholicism',
+				'Running Mate': 'Barack Obama'
+			}
+		],
+
+		'candidate': [
+			{
+				'Full Name': 'Paul Ryan',
+				'Party': 'Republican',
+				'Alma Mater': [
+					{
+						'school': 'Miami University'
+					}
+				],
+				'Career': [
+					{
+						'job': 'Lawyer',
+						'job': 'Member of the U.S. House of Representatives from Wisconsin\'s 1st district'
+					}
+				],
+				'Home State': 'Wisconsin',
+				'Born': [
+					{
+						'Date': 'January 29, 1970 (age 43)',
+						'Location': 'Janesville, Wisconsin'
+					}
+				],
+				'Religion': 'Roman Catholicism',
+				'Running Mate': 'Mitt Romney'
+			}
+		];
+
+
 	$scope.votingTopics = [
 		'National': [
 			{
