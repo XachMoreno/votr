@@ -23,47 +23,76 @@
 </div> <!-- /.container -->
 
 
-<div class="row-fluid voting-container">
+<div ng-controller="VoteCtrl" class="row-fluid voting-container">
 	<div class="span12">
 
 		<h3>CAST YOUR VOTE</h3>
 		<h4>for</h4>
 		<h1>President <span class="fancy">&amp;</span> Vice President</h1>
 
+		<script type="text/javascript">console.log('<li ng-repeat="nationalHeader in votingTopics" class="nav-header">' + {{nationalHeader[0].name}} + '</li>');</script>
+
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="well sidebar-nav">
 					<ul class="nav nav-list">
-						<li class="nav-header">National</li>
-						<li class="active"><a href="president.html">President &amp; Vice President</a></li>
-						<li><a href="#">United States Senator</a></li>
-						<li><a href="#">United States Representative</a></li>
 
-						<li class="nav-header">State</li>
-						<li><a href="#">State Assembly</a></li>
-						<li><a href="#">School Governing Board Member</a></li>
-						<li><a href="#">City Mayor</a></li>
-						<li><a href="#">City Council Member</a></li>
-						<li><a href="prop30.html">State Proposition 30</a></li>
-						<li><a href="#">State Proposition 31</a></li>
-						<li><a href="#">State Proposition 32</a></li>
-						<li><a href="#">State Proposition 33</a></li>
-						<li><a href="#">State Proposition 34</a></li>
-						<li><a href="#">State Proposition 35</a></li>
-						<li><a href="#">State Proposition 36</a></li>
-						<li><a href="#">State Proposition 37</a></li>
-						<li><a href="#">State Proposition 38</a></li>
-						<li><a href="#">State Proposition 39</a></li>
-						<li><a href="#">State Proposition 40</a></li>
-						<li><a href="#">City Measure G</a></li>
-						<li><a href="#">County Measure H</a></li>
-					</ul>
-				</div> <!--/.sidebar-nav-->
+						<!-- National -->
+						<li ng-repeat="nationalHeader in votingTopics" class="nav-header">
+							{{nationalHeader[0].name}}
+						</li>
+
+						<li ng-repeat="nationalTopic in votingTopics" class="active">
+							<a href="{{nationalTopic.National.topicLink}}">
+								{{nationalTopic.National.topicTitle}}
+							</a>
+						</li>
+
+
+						<!-- State -->
+						<li ng-repeat="stateHeader in votingTopics" class="nav-header">
+							{{stateHeader[0]}}
+						</li>
+
+						<li ng-repeat="stateTopic in votingTopics">
+							<a href="{{stateTopic.State.California.topicLink}}">
+								{{stateTopic.State.California.topicTitle}}
+							</a>
+						</li>
+
+
+						<!-- City -->
+						<li ng-repeat="cityHeader in votingTopics" class="nav-header">
+							{{cityHeader[0]}}
+						</li>
+
+						<li ng-repeat="cityTopic in votingTopics">
+							<a href="{{cityTopic.State.California.Sacramento.City.topicLink}}">
+								{{cityTopic.State.California.Sacramento.City.topicTitle}}
+							</a>
+						</li>
+
+
+						<!-- County -->
+						<li ng-repeat="countyHeader in votingTopics" class="nav-header">
+							{{countyHeader[0]}}
+						</li>
+
+						<li ng-repeat="countyTopic in votingTopics">
+							<a href="{{countyTopic.County.topicLink}}">
+								{{countyTopic.County.topicTitle}}
+							</a>
+						</li>
+
+					</ul> <!-- /.nav-list -->
+				</div> <!-- /.sidebar-nav-->
 			</div> <!-- /.span3 -->
+
 
 		<div class="span9">
 			<div class="span6 presidential-container democrat" id="obama-biden">
 				<!-- <span>Democrat</span> -->
+				<input type="checkbox" id="obama-checkbox"/>
 
 				<div class="row-fluid">
 					<div class="span6 candidate">
@@ -307,6 +336,7 @@
 
 			<div class="span6 presidential-container republican" id="romney-ryan">
 				<!-- <span>Republican</span> -->
+				<input type="checkbox" id="romney-checkbox"/>
 
 				<div class="row-fluid">
 					<div class="span6">
