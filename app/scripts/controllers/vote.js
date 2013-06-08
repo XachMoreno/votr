@@ -132,6 +132,7 @@ votrApp.controller("VoteCtrl", function($scope) {
         ],
         "State": [
             {
+                "name": "State",
                 "California": [
                     {
                         "id": 1,

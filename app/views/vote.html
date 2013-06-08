@@ -30,8 +30,6 @@
 		<h4>for</h4>
 		<h1>President <span class="fancy">&amp;</span> Vice President</h1>
 
-		<script type="text/javascript">console.log('<li ng-repeat="nationalHeader in votingTopics" class="nav-header">' + {{nationalHeader[0].name}} + '</li>');</script>
-
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="well sidebar-nav">
@@ -39,31 +37,31 @@
 
 						<!-- National -->
 						<li ng-repeat="nationalHeader in votingTopics" class="nav-header">
-							{{nationalHeader[0].name}}
+							{{nationalHeader.National[0].name}}
 						</li>
 
 						<li ng-repeat="nationalTopic in votingTopics" class="active">
-							<a href="{{nationalTopic.National.topicLink}}">
-								{{nationalTopic.National.topicTitle}}
+							<a href="{{nationalTopic.National[0].topicLink}}">
+								{{nationalTopic.National[0].topicTitle}}
 							</a>
 						</li>
 
 
 						<!-- State -->
 						<li ng-repeat="stateHeader in votingTopics" class="nav-header">
-							{{stateHeader[0]}}
+							{{stateHeader.State[0].name}}
 						</li>
 
 						<li ng-repeat="stateTopic in votingTopics">
-							<a href="{{stateTopic.State.California.topicLink}}">
-								{{stateTopic.State.California.topicTitle}}
+							<a href="{{stateTopic.State[0].California[0].topicLink}}">
+								{{stateTopic.State[0].California[0].topicTitle}}
 							</a>
 						</li>
 
 
 						<!-- City -->
 						<li ng-repeat="cityHeader in votingTopics" class="nav-header">
-							{{cityHeader[0]}}
+							{{cityHeader.State[0].California[0].City[0].name}}
 						</li>
 
 						<li ng-repeat="cityTopic in votingTopics">
