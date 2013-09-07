@@ -1,0 +1,519 @@
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_awesome";
+@import "compass_twitter_bootstrap_responsive";
+
+html,
+body {
+	font-family: 'Open Sans';
+}
+
+.navbar .brand {
+	font-family: 'Economica';
+	margin-left: -3px;
+	font-size: 36px;
+}
+
+#full-width-slider img {
+	min-width: 110%;
+	margin-left: -60px;
+	margin-top: -50px;
+}
+
+h1 {
+	font-family: Georgia;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: Georgia;
+}
+
+
+/* Index */
+#big-vote-container {
+	background-color: #00446a;
+	opacity: 0.8;
+	margin-top: -460px;
+	height: 460px;
+
+	h1 {
+		font-size: 100px;
+		color: white;
+		margin-top: 60px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+
+	p {
+		color: white;
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 1px;
+
+		strong {
+			font-weight: 500;
+		}
+	}
+
+	button {
+		opacity: 1.0;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#big-vote-button {
+		margin-top: 45px;
+		font-family: 'Open Sans';
+		font-size: 24px;
+	}
+}
+
+#about-row {
+	h2 {
+		font-weight: 300;
+		text-align: center;
+		color: #00446a;
+		letter-spacing: 1px;
+
+		strong {
+			font-weight: 500;
+		}
+	}
+}
+
+.voting-container {
+	h3 {
+		font-weight: 700;
+		font-family: 'Economica';
+		text-align: center;
+		font-size: 36px;
+		color: #00446a;
+		letter-spacing: 1px;
+	}
+
+	h4 {
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+		font-size: 22px;
+		color: #00446a;
+	}
+
+	h1 {
+		text-align: center;
+		color: #00446a;
+
+		.fancy {
+			font-family: 'Simonetta', cursive;
+			font-size: 24px;
+		}
+	}
+
+	.nav-list {
+		.nav-header {
+			font-family: 'Economica';
+			color: #00446a;
+			font-size: 24px;
+			text-align: center;
+		}
+
+		.active > a {
+			background-color: transparent;
+			font-weight: 500;
+			color: #007abd;
+			text-shadow: none;
+		}
+
+		// li > a {
+		// 	color: black;
+		// }
+	}
+
+	.democrat {
+		border-top-style: solid;
+		border-top-width: 4px;
+		border-top-color: #007abd;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-left-color: #007abd;
+		// -moz-box-shadow: 0px 6px 16px #007abd;
+		// -webkit-box-shadow: 0px 6px 16px #007abd;
+		// box-shadow: 0px 6px 16px #007abd;
+
+		span {
+			background-color: #007abd;
+			color: #fff;
+			padding: 5px;
+			margin-top: 6px;
+			margin-left: -20px;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+
+	.republican {
+		border-top-style: solid;
+		border-top-width: 4px;
+		border-top-color: #ca0002;
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-left-color: #ca0002;
+		// -moz-box-shadow: 0px 6px 16px #ca0002;
+		// -webkit-box-shadow: 0px 6px 16px #ca0002;
+		// box-shadow: 0px 6px 16px #ca0002;
+
+		span {
+			background-color: #ca0002;
+		}
+	}
+
+	.presidential-container {
+		background-color: rgb(241, 241, 241);
+		padding: 20px;
+		// padding-top: 0px;
+		margin-bottom: 50px;
+
+		.voting-topic-title {
+			h1 {
+				text-align: center;
+				color: rgba(0, 146, 199, 0.9);
+				font-family: Georgia;
+				font-size: 32px;
+				margin: 0px;
+			}
+		}
+
+		/* Candidate Name */
+		h1 {
+			font-size: 24px;
+			margin: 0px;
+			margin-bottom: -15px;
+			font-family: 'Open Sans';
+			font-weight: 500;
+			text-align: left;
+		}
+
+		/* Candidate Title */
+		h2 {
+			font-size: 12px;
+			font-weight: 500;
+			margin: 0px;
+		}
+
+		img {
+			height: 245px;
+			-moz-box-shadow: 0px 6px 16px #333;
+			-webkit-box-shadow: 0px 6px 16px #333;
+			box-shadow: 0px 6px 16px #333;
+		}
+
+		input[type="checkbox"] {
+			height: 70px;
+			width: 70px;
+			margin-left: -15px;
+			margin-top: -85px;
+			margin-bottom: -50px;
+		}
+
+		.global-info-tabs {
+			margin-top: 30px;
+			margin-bottom: 0px;
+		}
+
+		.tab-content {
+			background-color: #fff;
+			padding: 10px;
+			border-style: solid;;
+			border-color: #ddd;
+			border-width: 1px;
+			border-top-color: transparent;
+			overflow: scroll;
+			height: 400px;
+		}
+
+		dd {
+			margin-bottom: 7px;
+		}
+
+		dd:last-child {
+			margin-bottom: 20px;
+		}
+
+		.accordion-inner h1 {
+			margin-bottom: 7px;
+		}
+
+		.selected {
+			background-color: orange;
+		}
+	}
+}
+
+
+.register-container {
+	h3 {
+		font-weight: 700;
+		font-family: 'Economica';
+		text-align: center;
+		font-size: 36px;
+		color: #00446a;
+		letter-spacing: 1px;
+	}
+
+	h4 {
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+		font-size: 20px;
+		color: #00446a;
+	}
+
+	h1 {
+		text-align: center;
+		color: #00446a;
+	}
+}
+
+
+.results-container {
+	h3 {
+		font-weight: 700;
+		font-family: 'Economica';
+		text-align: center;
+		font-size: 36px;
+		color: #00446a;
+		letter-spacing: 1px;
+	}
+
+	h4 {
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+		font-size: 20px;
+		color: #00446a;
+	}
+
+	h1 {
+		text-align: center;
+		color: #00446a;
+	}
+
+	.president-results {
+		margin-bottom: 20px;
+
+		.democrat-results {
+			h1, h2, h3, h4 {
+				color: #007abd;
+			}
+
+			h1 {
+				font-weight: 700;
+				font-family: 'Economica';
+			}
+
+			h2 {
+				
+			}
+
+			h3 {
+
+			}
+
+			h4 {
+
+			}
+		}
+
+		.republican-results {
+			h1, h2, h3, h4 {
+				color: #ca0002;
+			}
+
+			h1 {
+				font-weight: 700;
+				font-family: 'Economica';
+			}
+
+			h2 {
+
+			}
+
+			h3 {
+
+			}
+
+			h4 {
+
+			}
+		}
+
+		// h1 {
+		// 	font-family: Georgia;
+		// }
+
+		h2 {
+			font-family: Georgia;
+			font-style: italic;
+			text-align: center;
+			font-size: 60px;
+		}
+
+		h3 {
+			font-size: 30px;
+		}
+
+		h4 {
+			font-size: 24px;
+		}
+	}
+
+	.prop-results {
+		h1 {
+			
+		}
+
+		.row {
+			h1 {
+				font-weight: 700;
+				font-family: 'Economica';
+			}
+
+			h2 {
+				font-family: Georgia;
+				font-style: italic;
+				text-align: center;
+				font-size: 60px;
+				margin-bottom: 30px;
+				color: #00446a;
+			}
+
+			h3 {
+				font-size: 30px;
+			}
+		}
+
+	}
+}
+
+
+/* CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 30px;
+      margin-top: -14px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: auto;
+    }
+
+    .carousel-caption {
+      background-color: hsla(196, 87%, 50%, 0.4);
+      position: static;
+      max-width: 400px;
+      padding: 20px;
+      margin-top: 150px;
+      margin-left: 50px;
+    }
+
+    .carousel-caption {
+		color: #fff;
+		// margin: 0;
+
+		h1 {
+			// line-height: 2;
+			font-weight: 500;
+			font-family: 'Open Sans';
+		}
+
+		.lead {
+			line-height: 1.25;
+			font-weight: 300;
+		}
+    }
+
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+	.container.navbar-wrapper {
+		margin-bottom: 0;
+		width: auto;
+	}
+	.navbar-inner {
+		border-radius: 0;
+		margin: -20px 0;
+	}
+
+	.carousel .item {
+		height: 500px;
+	}
+	.carousel img {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.navbar-inner {
+		margin: -20px;
+	}
+
+	.carousel {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.carousel .container {
+
+	}
+	.carousel .item {
+		height: 300px;
+	}
+	.carousel img {
+		height: 300px;
+	}
+	.carousel-caption {
+		width: 65%;
+		padding: 0 70px;
+		margin-top: 100px;
+	}
+	.carousel-caption h1 {
+		font-size: 30px;
+	}
+	.carousel-caption .lead,
+	.carousel-caption .btn {
+		font-size: 18px;
+	}
+}

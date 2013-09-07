@@ -1,0 +1,41 @@
+SyntaxError: Parse error
+
+Error: No module: votrApp
+
+  http://localhost:3501/scripts/vendor/d10639ae.angular.js:1058
+  http://localhost:3501/scripts/vendor/d10639ae.angular.js:999 in ensure
+  http://localhost:3501/scripts/vendor/d10639ae.angular.js:1230 in module
+  http://localhost:3501/scripts/vendor/d10639ae.angular.js:2699
+CACHE MANIFEST
+
+# Time: Fri Sep 06 2013 21:06:06 GMT-0700 (PDT)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://localhost:3501/
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://localhost:3501
+#  configFile: /usr/local/lib/node_modules/yeoman/lib/support/confess.json
+
+CACHE:
+http://fonts.googleapis.com/css?family=Economica:400,700|Herr+Von+Muellerhoff|Open+Sans:300italic,400,300,700|IM+Fell+French+Canon+SC|Simonetta
+http://localhost:3501/styles/img/glyphicons-halflings-white.png
+http://localhost:3501/styles/img/glyphicons-halflings.png
+http://www.google-analytics.com/ga.js
+scripts/0b031c18.scripts.js
+scripts/vendor/d10639ae.angular.js
+styles/4cad09ca.main.css
+
+NETWORK:
+*
